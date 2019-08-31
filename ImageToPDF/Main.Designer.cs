@@ -32,7 +32,7 @@
             this.sourceButton = new System.Windows.Forms.Button();
             this.SourceLabel = new System.Windows.Forms.Label();
             this.DestinationLabel = new System.Windows.Forms.Label();
-            this.DestinationPath = new System.Windows.Forms.TextBox();
+            this.destinationPath = new System.Windows.Forms.TextBox();
             this.destinationButton = new System.Windows.Forms.Button();
             this.convertButton = new System.Windows.Forms.Button();
             this.resetButton = new System.Windows.Forms.Button();
@@ -83,13 +83,13 @@
             this.DestinationLabel.TabIndex = 3;
             this.DestinationLabel.Text = "Folder to Pdf";
             // 
-            // DestinationPath
+            // destinationPath
             // 
-            this.DestinationPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DestinationPath.Location = new System.Drawing.Point(136, 73);
-            this.DestinationPath.Name = "DestinationPath";
-            this.DestinationPath.Size = new System.Drawing.Size(328, 24);
-            this.DestinationPath.TabIndex = 4;
+            this.destinationPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.destinationPath.Location = new System.Drawing.Point(136, 73);
+            this.destinationPath.Name = "destinationPath";
+            this.destinationPath.Size = new System.Drawing.Size(328, 24);
+            this.destinationPath.TabIndex = 4;
             // 
             // destinationButton
             // 
@@ -180,7 +180,7 @@
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.convertButton);
             this.Controls.Add(this.destinationButton);
-            this.Controls.Add(this.DestinationPath);
+            this.Controls.Add(this.destinationPath);
             this.Controls.Add(this.DestinationLabel);
             this.Controls.Add(this.SourceLabel);
             this.Controls.Add(this.sourceButton);
@@ -204,7 +204,7 @@
         private System.Windows.Forms.Button sourceButton;
         private System.Windows.Forms.Label SourceLabel;
         private System.Windows.Forms.Label DestinationLabel;
-        private System.Windows.Forms.TextBox DestinationPath;
+        private System.Windows.Forms.TextBox destinationPath;
         private System.Windows.Forms.Button destinationButton;
         private System.Windows.Forms.Button convertButton;
         private System.Windows.Forms.Button resetButton;

@@ -32,7 +32,7 @@ namespace ImageToPDF
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 sourcePath.Text = dialog.FileName;
-                DestinationPath.Text = Path.GetDirectoryName(sourcePath.Text);
+                destinationPath.Text = Path.GetDirectoryName(sourcePath.Text);
                 string[] safeNames = (dialog.SafeFileName).Split('.');
                 var names = safeNames.Take<string>(safeNames.Length - 1);
                 this.fname = String.Join(".", names);
@@ -49,7 +49,7 @@ namespace ImageToPDF
                 {
                     string[] files = Directory.GetFiles(fbd.SelectedPath);
 
-                    DestinationPath.Text = fbd.SelectedPath;
+                    destinationPath.Text = fbd.SelectedPath;
                 }
             }
         }
@@ -57,21 +57,21 @@ namespace ImageToPDF
         private void ResetButton_Click(object sender, EventArgs e)
         {
             sourcePath.Text = "";
-            DestinationPath.Text = "";
+            destinationPath.Text = "";
         }
 
         private void ConvertButton_Click(object sender, EventArgs e)
         {
             convertButton.Enabled = false;
-            if (sourcePath.Text == "" || DestinationPath.Text == "")
+            if (sourcePath.Text == "" || destinationPath.Text == "")
             {
-                MessageBox.Show("Select paths to create PDF.");
+                MessageBox.Show("Select paths to create PDF.", "Invalid Input");
                 convertButton.Enabled = true;
                 return;
             }
 
             Document document = new Document();
-            using (var stream = new FileStream(DestinationPath.Text + "\\" + this.fname + ".pdf", FileMode.Create, FileAccess.Write, FileShare.None))
+            using (var stream = new FileStream(destinationPath.Text + "\\" + this.fname + ".pdf", FileMode.Create, FileAccess.Write, FileShare.None))
             {
                 PdfWriter.GetInstance(document, stream);
                 document.Open();
