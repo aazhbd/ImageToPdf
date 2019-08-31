@@ -104,6 +104,7 @@
             // 
             // convertButton
             // 
+            this.convertButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.convertButton.Location = new System.Drawing.Point(362, 118);
             this.convertButton.Name = "convertButton";
             this.convertButton.Size = new System.Drawing.Size(210, 31);
@@ -114,9 +115,10 @@
             // 
             // resetButton
             // 
-            this.resetButton.Location = new System.Drawing.Point(258, 118);
+            this.resetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetButton.Location = new System.Drawing.Point(251, 118);
             this.resetButton.Name = "resetButton";
-            this.resetButton.Size = new System.Drawing.Size(98, 31);
+            this.resetButton.Size = new System.Drawing.Size(105, 31);
             this.resetButton.TabIndex = 7;
             this.resetButton.Text = "Reset Path";
             this.resetButton.UseVisualStyleBackColor = true;
