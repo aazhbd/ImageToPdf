@@ -26,7 +26,7 @@ namespace ImageToPDF
         private void SourceButton_Click(object sender, EventArgs e)
         {
             OpenFileDialog dialog = new OpenFileDialog();
-            dialog.Filter = "image files (*.jpg)|*.jpg|All files (*.*)|*.*";
+            dialog.Filter = "Image files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif; *.png|All files (*.*)|*.*";
             dialog.Title = "Select an Image to convert to PDF";
 
             if (dialog.ShowDialog() == DialogResult.OK)
