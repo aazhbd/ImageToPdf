@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.sourcePath = new System.Windows.Forms.TextBox();
             this.sourceButton = new System.Windows.Forms.Button();
             this.SourceLabel = new System.Windows.Forms.Label();
@@ -188,6 +189,7 @@
             this.Controls.Add(this.sourcePath);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "Main";
