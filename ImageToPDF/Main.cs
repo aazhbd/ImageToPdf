@@ -102,5 +102,10 @@ namespace ImageToPDF
         {
             Application.Exit();
         }
+
+        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("A tool to add images in a PDF document. Written by, AAZ H, aazhbd@conveylive.com", "About");
+        }
     }
 }
